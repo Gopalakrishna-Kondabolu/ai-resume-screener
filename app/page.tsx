@@ -29,7 +29,7 @@ export default function Home() {
       formData.append('job_description', jobDesc)
 
       const response = await axios.post(
-        'http://127.0.0.1:8000/analyze',
+        'https://ai-resume-screener-7ohk.onrender.com/analyze',
         formData,
         { headers: { 'Content-Type': 'multipart/form-data' } }
       )
